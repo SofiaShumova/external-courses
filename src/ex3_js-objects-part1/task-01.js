@@ -1,10 +1,7 @@
-function createObject() {
-    const person = {
-        name: 'Sonya',
-        age: 20,
-        town: 'Ryazan',
-        married: false
-    }
-    delete person.married
+const person = {
+	name: 'Sonya',
+	age: 20,
+	town: 'Ryazan',
+	married: false
 }
-module.exports = createObject
+delete person.married
