@@ -3,5 +3,5 @@ function checkType(value) {
 		return typeof(value);
 	}
 	return undefined;
-}
+} 
 module.exports = checkType
