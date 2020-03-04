@@ -1,8 +1,4 @@
 function checkProperty(string, obj) {
-    for (let key in obj) {
-        if (key === string)
-            return true;
-    }
-    return false;
+    return obj.hasOwnProperty(string)
 }
 module.exports = checkProperty
