@@ -9,11 +9,11 @@ const Calculator = {
     return Calculator.subtract
   },
   divide: function(x = 1) {
-    Calculator.result *= x
+    Calculator.result /= x
     return Calculator.divide
   },
   multiply: function(x = 1) {
-    Calculator.result /= x
+    Calculator.result *= x
     return Calculator.multiply
   },
   getResult: function() {
