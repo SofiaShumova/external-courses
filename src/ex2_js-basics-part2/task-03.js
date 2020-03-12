@@ -1,6 +1,6 @@
 function getEvenAndOddNumder(array) {
 	let countArray = [0, 0, 0];
-	for (let i in array) {
+	for (let i = 0; i < array.length; i++) {
 		if (typeof(array[i]) === "number") {
 			if (array[i] === 0) {
 				countArray[2]++;

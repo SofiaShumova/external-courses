@@ -1,6 +1,6 @@
 function hasIdenticalElements(array) {
-	for (let i in array) {
-		if(array[i]!==array[0])
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] !== array[0])
 			return false;
 	}
 	return true;
