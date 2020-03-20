@@ -20,7 +20,8 @@ const Calculator = {
     return this.result
   },
   reset: function() {
-    return Calculator.result = 0
+    Calculator.result = 0
+    return Calculator.result
   }
 }
 module.exports = Calculator
