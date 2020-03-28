@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form here</h1>
+    <hr />
+    <form action="/login" method="post">
+        <fieldset class="infoUser">
+            <div class="box">
+                <label>Name:</label>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="box">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="name@domain.com" required>
+                <div class="hint">
+                    <div class="triangle"></div>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+            <div class="box">
+                <label>Website:</label>
+                <input type="url" id="website" placeholder="domain.com" required>
+                <div class="hint">
+                    <div class="triangle"></div>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+            <div class="box">
+                <label>Message:</label>
+                <textarea></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="actionUser">
+            <div class="box">
+                <button>Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

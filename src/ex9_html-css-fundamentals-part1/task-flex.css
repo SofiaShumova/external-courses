@@ -1,0 +1,25 @@
+body {
+    padding: 30px;
+  }
+  .content{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  header {
+    background: lightblue;
+  }
+  section {
+    background: lightgreen;
+    flex-basis: 75%;
+  }
+  article {
+    background: white;
+    margin: 0 0 1rem 0;
+  }
+  aside {
+    background: pink;
+    flex-basis: 25%;
+  }
+  header, article, section, .module {
+    padding: 1rem;
+  }
