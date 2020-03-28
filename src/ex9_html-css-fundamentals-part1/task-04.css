@@ -1,15 +1,12 @@
 div{
     width: 300px;
     height: 200px;
-    margin: 50px 0; 
-    
+    margin: 50px 0;
 }
 .orangeBox{
     background: rgba(255, 116, 0, 1);
-    
     box-shadow:  10px 10px 0 1px rgba(255, 116, 0, 0.6),
                  20px 20px 0 0 rgba(255, 116, 0, 0.3);
-
 }
 .blueBox div{
     position: relative;
@@ -18,7 +15,6 @@ div{
     left: 60px;
     margin-left: 20px;
     background: rgba(14, 84, 167, 0.3);
-   
 }
 .inBlueBox{
     top: -10px; 
@@ -30,7 +26,6 @@ div{
     left: -10px;
     background: rgba(14, 84, 167, 1);
 }
-
 .pinkBox:before, .pinkBox::after{
     position: absolute;
     width: 100%;
@@ -42,7 +37,6 @@ div{
     position: relative;
     top: 20px;
     left: 20px;
-    
 }
 .pinkBox:before{
     top: -10px;
