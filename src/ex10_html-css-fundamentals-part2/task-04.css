@@ -218,7 +218,7 @@ hr{
     border-bottom: 10px solid #1faae2; 
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1024px){
     .burger{
         display: block;
         width: 20%;
