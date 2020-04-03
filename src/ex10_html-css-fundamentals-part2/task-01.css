@@ -1,0 +1,11 @@
+img{
+    width: 300px;
+    height: 300px;
+}
+.circle{
+    clip-path: circle(50% at 50% 50%);
+}
+.polygon{
+    -webkit-mask-image: url(https://avatanplus.com/files/resources/mid/576d15fb93b91155821dded5.png);
+    -webkit-mask-size: 300px;
+}

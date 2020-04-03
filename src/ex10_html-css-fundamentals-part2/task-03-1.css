@@ -1,0 +1,19 @@
+.body{
+    color:#05315B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+.data{
+    text-transform: capitalize;
+}
+.money::before{
+    content: "$ ";
+}
+.headerTable{
+    text-transform: uppercase;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: small;
+    text-align: center;
+    background-color: rgb(220,229,240);
+}
+
