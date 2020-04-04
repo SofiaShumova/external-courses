@@ -1,11 +1,8 @@
-label{
-    display: block;
-    margin: 20px 0;
+input, textarea{
+
+    margin: 10px 0;
 }
 textarea{
     width: 200px;
     height: 100px;
-}
-.line{
-    display: inline;
 }
