@@ -13,23 +13,23 @@
         <fieldset>
             <legend>Personal data</legend>
             <label for="surname">Surname</label>
-            <input type="text" name="surname">
+            <input type="text" name="surname" id="surname">
             <br />
             <label for="firstName">First name</label>
-            <input type="text" name="firstName">
+            <input type="text" name="firstName" id="firstName">
             <br />
             <label for="middleName">Middle name</label>
-            <input type="text" name="middleName">
+            <input type="text" name="middleName" id="middleName">
             <br />
             <label>You are</label>
             <input type="radio" value="male"> male
             <input type="radio" value="female"> female
             <br />
             <label for="age">Age</label>
-            <input type="number" name="age" min="18" max="101">
+            <input type="number" name="age" min="18" max="101" id="age">
             <br />
             <label for="country">Country of residence</label>
-            <select name="country">
+            <select name="country" id="country">
                 <option disabled selected>Select</option>
                 <option value="Russia">Russia</option>
                 <option value="USA">USA</option>
@@ -41,11 +41,11 @@
             <input type="checkbox" value="Moscow">Moscow
             <br/>
             <label for="photo">Photography</label>
-            <input type="file" name="photo">
+            <input type="file" name="photo" id="photo">
             <br />
             <hr />
             <label for="title">Title</label>
-            <select name="title" multiple="multiple" size="8">
+            <select name="title" id="title" multiple="multiple" size="8">
                 <optgroup label="Technologies">
                     <option value="web">Webmaster</option>
                     <option value="database admin">Database Administrator</option>
@@ -59,23 +59,23 @@
             </select>
             <br/>
             <label for="salary">Salary</label>
-            <input type="range" name="salary">
+            <input type="range" name="salary" id="salary">
             <br/>
             <textarea name="about" placeholder="Tell us about yourself..."></textarea>
         </fieldset>
         <fieldset>
             <legend>Contact Information</legend>
             <label for="url">Site</label>
-            <input type="url" name="url">
+            <input type="url" name="url" id="url">
             <br/>
             <label for="mail">Email</label>
-            <input type="email" name="mail" required>
+            <input type="email" name="mail" id="mail" required>
             <br/>
             <label for="tel">Phone</label>
-            <input type="tel" name="tel">
+            <input type="tel" name="tel" id="tel">
         </fieldset>
         <label for="pass">Password</label>
-        <input type="password" name="pass" required>
+        <input type="password" name="pass" id="pass" required>
         <br/>
         <button type="submit">Отправить</button>
         <button type="reset"> Сбросить</button>
