@@ -1,0 +1,29 @@
+.field { 
+    display:inline-block; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+label { 
+    position: absolute;
+    left: 5px;
+    transition: all .2s linear; 
+    color:#999; 
+    font-size:15px; 
+}
+input { 
+    margin-top:20px; 
+    border:1px solid #999; 
+    padding:3px 2px; 
+}
+input:placeholder-shown + label { 
+    opacity:0;
+    visibility: hidden; 
+}
+input:valid + label { 
+    opacity:1; 
+}
+input:focus { 
+    border: 1px solid pink;
+}
+input:focus + label { 
+    color:#CD0074; 
+}
