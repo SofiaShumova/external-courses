@@ -1,0 +1,57 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+header, footer{
+    background: #0067A3;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+header>h1{
+    font-weight: 500;
+    font-style: normal ;
+    flex: 2;
+}
+.buttonCreate{
+    display: flex;
+    align-items: center;
+    background: white;
+    color: black;
+    width: 181px;
+    height: 33px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-right: 49px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+.plus{
+    margin-right: 10px;
+}
+.menu{
+    margin: 0 16px;
+}
+.icon{
+    margin-right: 7px;
+}
+main{
+    background: #0079BF;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 110px) ; 
+}
+.task{
+    display: flex;
+    flex: 2;
+    margin-left: 67px;
+}
+.task>p, footer>p{
+    margin-right: 36px;
+}
