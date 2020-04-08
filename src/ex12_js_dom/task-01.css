@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+header, footer{
+    background:#E768AB;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+main{
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    margin-right:10px;
+}
+.slider{
+    display: flex;
+    align-items: center;
+}
+.previous>svg, .next>svg{
+    fill:#E73A95;
+}
+.previous>svg:hover, .next>svg:hover{
+    fill:#870047;
+    cursor: pointer;
+}
+.previous>svg:active, .next>svg:active{
+    animation-name: opacityButton;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+}
+.image{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.image>img{
+    height: 100%;
+    width: 30%;
+}
+@keyframes opacityButton{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
