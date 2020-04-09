@@ -47,6 +47,13 @@ main{
 .image>img{
     height: 100%;
     width: 30%;
+    opacity: 1;
+}
+.animationClass{
+    animation-name: scale;
+    animation-duration: 0.3s;
+    animation-delay: 0ms;
+    animation-iteration-count:1;
 }
 @keyframes opacityButton{
     0%{
@@ -59,4 +66,18 @@ main{
         opacity: 1;
     }
 }
+@keyFrames scale{
+    0%{
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50%{
+      opacity: 0.5;
+      transform: scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 

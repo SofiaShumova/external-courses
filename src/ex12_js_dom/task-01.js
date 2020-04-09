@@ -17,22 +17,31 @@ let slider ={
             for(let key in slider.state){
                 slider.state[key]+=1
             }
-        }   
-        updateViewSlider()     
+            updateViewSlider() 
+        }             
     },
     decrement:function(){
         if(slider.state["firstImage"]>0){
             for(let key in slider.state){
                 slider.state[key]-=1
             }
-        }  
-        updateViewSlider()      
-    } 
+            updateViewSlider() 
+        }             
+    },
+    end:false,
+    start: true
 }
 function updateViewSlider(){
     for(let prop in slider.state){
-        document.getElementById(prop).src=arrayImage[slider.state[prop]]
+        let elem = document.getElementById(prop);
+        elem.src=arrayImage[slider.state[prop]]
+        elem.setAttribute("class", "animationClass");
     }
+    setTimeout(()=>{
+        for(let prop in slider.state){
+            setTimeout(document.getElementById(prop).setAttribute("class", ""), 1000)
+        }
+    }, 300)
 }
 updateViewSlider()
 
