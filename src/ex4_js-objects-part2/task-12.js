@@ -1,4 +1,4 @@
-function multiplyNumbers(x,y) {
+function sumNumbers(x,y) {
 	return Number((x+y).toFixed(3));
 }
-module.exports = multiplyNumbers
+module.exports = sumNumbers
