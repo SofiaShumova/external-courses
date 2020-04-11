@@ -1,6 +1,32 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.hint{
+    display: none;
+}
+.hintContent{
+    border-radius: 5%;
+    border: 2px solid #d4d4d5;
+    display: flex;
+    justify-content: center;
+}
+.hintContent>p{
+    margin: 9px;
+    color: #6d6e71;
+}
+.triangleHint{
+    width: 0;
+    height: 0;
+    border-top: 7px solid #d4d4d5;
+    border-bottom: 10px solid transparent; 
+    border-right:20px solid transparent;
+    border-left: 20px solid transparent;
+    margin: auto;
+}
+.contactBlock{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .contact{
     display: flex;
     justify-content: center;
@@ -35,6 +61,11 @@ header{
 .icon-contact:hover{
     fill: rgb(31, 170, 226);
 }
+
+.contact:hover + .hint{
+    display: block;
+}
+
 .divide{
     fill-rule: evenodd;
     fill: rgb(188, 190, 195);
@@ -232,11 +263,15 @@ hr{
     }
     header>.search{
         display: flex;
+        width: 30%;
+    }
+    header>.search>input{
+        width: 80%;
     }
     header{
         justify-content: space-between;
     }
-    .logo>object{
+    .logotype>object{
         width: 150px;
         height: 35px;
     }
