@@ -4,6 +4,7 @@ function some(array, callback) {
 			return true
 		}
 	}
+	
 	return false
 }
 module.exports = some
