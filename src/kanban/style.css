@@ -28,7 +28,7 @@ header>h1{
     justify-content: center;
     margin-right: 49px;
 }
-.profile{
+#profile{
     display: flex;
     align-items: center;
     margin-right: 15px;
@@ -57,24 +57,26 @@ main{
 .task>p, footer>p{
     margin-right: 36px;
 }
-/*ex 12*/
-.accountMenu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 34%;
-    width: 20%;
-}
-.list{
+
+#accountMenu{
     list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 55px;
+    left: 82%;
+    width: 17%;
 }
-.triangle{
-    width: 0;
-    height: 0;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 10px solid white;
+.itemMenu{
+    margin: 2px 0;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px 0 ;
+    border-radius:  5px;
+}
+.itemMenu:hover{
+    color: #0067A3;
+    cursor: pointer;
 }
