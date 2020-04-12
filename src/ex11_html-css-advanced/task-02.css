@@ -19,11 +19,31 @@ input:placeholder-shown + label {
     visibility: hidden; 
 }
 input:valid + label { 
-    opacity:1; 
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
 }
 input:focus { 
     border: 1px solid pink;
 }
 input:focus + label { 
     color:#CD0074; 
+}
+@keyFrames opacity{
+    0%{
+        opacity: 0.4;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    90%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
 }
