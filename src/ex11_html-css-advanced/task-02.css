@@ -21,7 +21,7 @@ input:placeholder-shown + label {
 input:valid + label { 
     animation-name: opacity;
     animation-duration: 1s;
-    animation-delay: 0;
+    animation-delay: 0ms;
     animation-iteration-count: 1;
 }
 input:focus { 
