@@ -1,0 +1,13 @@
+img {
+    width: 50%;
+    height: 30%;
+}
+.orangeBox{
+    background: orange;
+}
+.blueBox{
+    background: rgb(14,83,167);
+}
+.yellowBox{
+    background: #FFC700;
+}
