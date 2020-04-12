@@ -81,17 +81,17 @@ nav{
     align-items: center;
     margin-bottom: 0;
 }
-.menu>div{
+.itemMenu{
     border-right: 1px solid  rgb(188, 190, 195);
     padding: 5% 10px 0;
     display: flex;
     flex-direction: column;
 }
-.menu>div:hover{
+.itemMenu:hover{
     color:#1faae2;
     cursor: pointer;  
 }
-.menu>div:last-child{
+.itemMenu:last-child{
     border-right: 0;
 }
 .search{
@@ -140,14 +140,14 @@ h2{
     margin-bottom: 2%;
     margin-left: 2%;
 }
-.amp{
+.secondTitle{
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     margin-top: -10%;
     margin-right: -10%;
 }
-.amp>p{
+.secondTitle>p{
     font-weight: 900;
     font-size: 95px;
     color: #bbedff;
@@ -240,7 +240,7 @@ hr{
     border-left: 20px solid transparent;
     padding-top:5px ;
 }
-.menu>div:hover>.triangle{
+.itemMenu:hover>.triangle{
     border-bottom: 10px solid #1faae2; 
 }
 
