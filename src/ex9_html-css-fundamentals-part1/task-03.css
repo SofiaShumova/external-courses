@@ -9,4 +9,9 @@ button{
         0px 0px 0px 6px rgb(105, 105, 105); 
     color: rgb(94, 94, 94);
     background: linear-gradient(to top, rgb(145 , 145, 145) 5%,rgb(219, 219, 219) 60%);
+    outline-color: black;
+}
+button:hover{
+    color:black;
+    border-color: rgb(89 , 89, 89); 
 }

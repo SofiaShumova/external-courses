@@ -16,12 +16,12 @@ div{
     margin-left: 20px;
     background: rgba(14, 84, 167, 0.3);
 }
-.inBlueBox{
+.firstBlueShadow{
     top: -10px; 
     left: -10px;
     background: rgba(14, 84, 167, 0.6);
 }
-.inInBlueBox{
+.secondBlueShadow{
     top: -10px; 
     left: -10px;
     background: rgba(14, 84, 167, 1);
