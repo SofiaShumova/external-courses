@@ -13,9 +13,46 @@
 
 <body>
     <header>
-        <div class="burger">
+        <div class="burger" id="burger">
             <img src="img/burger.png" alt="menu">
         </div>
+        <div class="menuTablet" id="tabletMenu">
+            <div class="itemMenu">
+                HOME
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What about ISAMA
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What we do?
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Our Projects
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Excellent Team
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Contact
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("burger").onclick = displayMenu;
+            function displayMenu(){
+                let elem = document.getElementById("tabletMenu");
+                if(elem.style.display==="flex"){
+                    elem.style.display="none";
+                } else{
+                    elem.style.display="flex";
+                }
+            }
+        </script>
         <div class="logotype">
             <object type="image/svg+xml" data="img/logo.svg"></object>
         </div>

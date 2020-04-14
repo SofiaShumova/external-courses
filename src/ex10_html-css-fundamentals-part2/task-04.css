@@ -4,6 +4,9 @@ body{
 .hint{
     display: none;
 }
+.menuTablet{
+    display: none;
+}
 .hintContent{
     border-radius: 5%;
     border: 2px solid #d4d4d5;
@@ -248,6 +251,19 @@ hr{
     .burger{
         display: block;
         width: 20%;
+    }
+    .menuTablet{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:12%;
+        background: rgba(25, 120, 138, 0.7);
+        color: white;
+    }
+    .menuTablet>.itemMenu{
+        border: 1px solid;
+        margin-bottom: 2px;
+        text-align: center;
     }
     .burger>img{
         width: 40px;
