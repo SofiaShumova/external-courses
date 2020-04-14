@@ -55,6 +55,12 @@ main{
     animation-delay: 0ms;
     animation-iteration-count:1;
 }
+.animationCenter{
+    animation-name: scaleCenter;
+    animation-duration: 0.3s;
+    animation-delay: 0ms;
+    animation-iteration-count:1;
+}
 @keyframes opacityButton{
     0%{
         opacity: 0;
@@ -66,18 +72,38 @@ main{
         opacity: 1;
     }
 }
+#firstImage, #thirdImage{
+    opacity:0.6;
+    transform: scale(0.8);
+}
+#secondImage{
+    transform: scale(1.2);
+}
 @keyFrames scale{
+    0%{
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    50%{
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+    100%{
+      opacity: 0.6;
+      transform: scale(0.8);
+    }
+  }
+  @keyFrames scaleCenter{
     0%{
       opacity: 0;
       transform: scale(0.8);
     }
     50%{
-      opacity: 0.5;
-      transform: scale(0.9);
-    }
-    100%{
-      opacity: 1;
+      opacity: 0.7;
       transform: scale(1);
     }
+    100%{
+      opacity: 0.9;
+      transform: scale(1.2);
+    }
   }
-
