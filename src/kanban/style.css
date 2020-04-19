@@ -10,23 +10,35 @@ header, footer{
     display: flex;
     align-items: center;
     color: white;
-    justify-content: space-around;
 }
 header>h1{
     font-weight: 500;
     font-style: normal ;
     flex: 2;
 }
+
 .buttonCreate{
     display: flex;
     align-items: center;
     background: white;
     color: black;
-    width: 181px;
+    width: 16%;
     height: 33px;
     border-radius: 5px;
     justify-content: center;
     margin-right: 49px;
+    padding: 0px;
+    font-size: medium;
+    font: unset;
+    border: 1px solid black;
+}
+.buttonCreate>p{
+    margin: 5px 0;
+}
+#account{
+    background: transparent;
+    border: 0px;
+    outline: transparent; 
 }
 #profile{
     display: flex;
@@ -54,7 +66,7 @@ main{
     flex: 2;
     margin-left: 67px;
 }
-.task>p, footer>p{
+.infoDevelop, .stateTask{
     margin-right: 36px;
 }
 
@@ -64,8 +76,9 @@ main{
     padding: 0;
     position: absolute;
     top: 55px;
-    left: 82%;
-    width: 17%;
+    left: 90%;
+    font-size: medium;
+    width: 10vw;
 }
 .itemMenu{
     margin: 2px 0;
@@ -79,4 +92,25 @@ main{
 .itemMenu:hover{
     color: #0067A3;
     cursor: pointer;
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 3vw;
+    }
+    .buttonCreate>p{
+        display: none;
+    }
+    .plus{
+        margin-right: 0px;
+    }
+    .buttonCreate{
+        width: 10%;
+    }
+} 
+
+@media(max-width:1200px){
+    .buttonCreate>p{
+        font-size: 1.5vw;
+    }
 }
