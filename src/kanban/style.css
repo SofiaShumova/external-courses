@@ -16,7 +16,6 @@ header>h1{
     font-style: normal ;
     flex: 2;
 }
-
 .buttonCreate{
     display: flex;
     align-items: center;
@@ -60,8 +59,9 @@ main{
     width: 100%;
     height: calc(100vh - 110px) ; 
     width: 100vw;
+    overflow-x: auto;
 }
-.task{
+.tasks{
     display: flex;
     flex: 2;
     margin-left: 67px;
@@ -114,3 +114,70 @@ main{
         font-size: 1.5vw;
     }
 }
+
+.tabTask{
+    background: #EBECF0;
+    width: 282px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+.headerTab, .footerTab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: normal;
+}
+.footerTab{
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    color: #5E6C84; 
+    margin-left: 4px;
+}
+.headerTab>h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.footerTab>span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.plusCard{
+    margin-right: 4px;
+}
+.task{
+    background: white;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 7px 9px;
+}
+.task>p{
+    margin: 0 2px;
+}
+button.footerTab{
+    background: transparent;
+    border: 0px;
+}
+#newTaskInput{
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    border: 0px;
+}
+.footerTab:hover{
+    cursor: pointer;
+    color: #344159;
+    transform: scale(1.05);
+}
+
