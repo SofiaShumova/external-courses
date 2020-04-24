@@ -175,9 +175,12 @@ button.footerTab{
     width: 100%;
     border: 0px;
 }
-.footerTab:hover{
+.footerTab:hover:enabled{
     cursor: pointer;
     color: #344159;
     transform: scale(1.05);
+}
+.footerTab:disabled{
+    color: #A3B0C7;
 }
 

@@ -1,4 +1,4 @@
-const dataMock = [
+let dataMock = [
     {
         title: 'backlog',
         issues: []
@@ -17,6 +17,7 @@ const dataMock = [
     }
 ]
 
+recoveryData();
 class Issue {
     constructor(id, name) {
         this.id = "task" + id;
@@ -63,6 +64,9 @@ for(let button of buttonsAdd){
 }
 
 function actionAdd() {
+    if(document.getElementById("newTaskInput"))
+        return;
+    setButtonDisabled(true);
     let title = this.parentElement.id;
     let index = getIndex(title);
 
@@ -122,13 +126,54 @@ function handlerInput() {
         addIssue(title, this.value);
     }
     
-    let p = document.createElement("p").innerHTML = this.value;
-    document.querySelector("#newTaskInput").replaceWith(p)
+    let p = document.createElement("p");
+    p.innerHTML = this.value;
+    setButtonDisabled(false);
+    this.replaceWith(p);
+
     updateLocalStorage();
+   
+}
+
+function setButtonDisabled(state){
+    for(let button of buttonsAdd){
+        button.disabled = state;
+    }
 }
 
 function updateLocalStorage() {
     localStorage.setItem('datamock', JSON.stringify(dataMock));
+}
+
+function recoveryData(){
+    if(localStorage.datamock !== undefined){
+        dataMock = JSON.parse(localStorage.datamock);
+        loadView();
+    }
+    console.log("recovery")
+}
+
+function loadView(){
+    for(let key in dataMock){
+        if(dataMock[key].issues.length>0){
+            dataMock[key].issues.forEach((element)=>{
+                addTaskInView(dataMock[key].title, element.name)
+            })
+            
+        }
+       }
+   
+}
+
+function addTaskInView(title, task){
+    let index = getIndex(title);
+    let taskBlock = document.createElement("div");
+    taskBlock.setAttribute("class", "task");
+
+    let p = document.createElement("p").innerHTML = task;
+    taskBlock.append(p);
+
+    document.getElementById(title).children[1].appendChild(taskBlock);    
 }
 
 
