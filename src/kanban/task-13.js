@@ -150,7 +150,6 @@ function recoveryData(){
         dataMock = JSON.parse(localStorage.datamock);
         loadView();
     }
-    console.log("recovery")
 }
 
 function loadView(){

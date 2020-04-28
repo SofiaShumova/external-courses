@@ -1,11 +1,13 @@
 let account = document.getElementById("account");
+let pic = document.getElementById("profile-pic")
 let menu = createMenu();
 let arrow = document.getElementById("arrow")
 menu.setAttribute("id", "accountMenu")
 
 account.addEventListener("click", displayAccountMenu)
-account.appendChild(menu)
+pic.addEventListener("click", displayAccountMenu)
 
+account.appendChild(menu)
 function displayAccountMenu(){
     if(document.getElementById("accountMenu").style.display==="none"){
         menu.style.display="block";

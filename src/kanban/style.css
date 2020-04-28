@@ -60,6 +60,7 @@ main{
     height: calc(100vh - 110px) ; 
     width: 100vw;
     overflow-x: auto;
+    align-items: flex-start;
 }
 .tasks{
     display: flex;
@@ -123,7 +124,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: max-content;
+    min-height: 100px;
+    max-height: 90%;
 }
 .headerTab, .footerTab{
     display: flex;
@@ -182,5 +184,11 @@ button.footerTab{
 }
 .footerTab:disabled{
     color: #A3B0C7;
+}
+object{
+    pointer-events: none;
+}
+.content{
+    overflow: auto;
 }
 
