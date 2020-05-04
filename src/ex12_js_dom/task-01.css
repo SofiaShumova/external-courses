@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+header, footer{
+    background:#E768AB;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+main{
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    margin-right:10px;
+}
+.slider{
+    display: flex;
+    align-items: center;
+}
+.previous>svg, .next>svg{
+    fill:#E73A95;
+}
+.previous>svg:hover, .next>svg:hover{
+    fill:#870047;
+    cursor: pointer;
+}
+.previous>svg:active, .next>svg:active{
+    animation-name: opacityButton;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+}
+.image{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.image>img{
+    height: 100%;
+    width: 30%;
+    opacity: 1;
+}
+.animationClass{
+    animation-name: scale;
+    animation-duration: 0.3s;
+    animation-delay: 0ms;
+    animation-iteration-count:1;
+}
+.animationCenter{
+    animation-name: scaleCenter;
+    animation-duration: 0.3s;
+    animation-delay: 0ms;
+    animation-iteration-count:1;
+}
+@keyframes opacityButton{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#firstImage, #thirdImage{
+    opacity:0.6;
+    transform: scale(0.8);
+}
+#secondImage{
+    transform: scale(1.2);
+}
+@keyFrames scale{
+    0%{
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    50%{
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+    100%{
+      opacity: 0.6;
+      transform: scale(0.8);
+    }
+  }
+  @keyFrames scaleCenter{
+    0%{
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50%{
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    100%{
+      opacity: 0.9;
+      transform: scale(1.2);
+    }
+  }
