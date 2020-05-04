@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="task-04.css">
+    <title>Portal</title>
+</head>
+
+<body>
+    <header>
+        <div class="burger" id="burger">
+            <img src="img/burger.png" alt="menu">
+        </div>
+        <div class="menuTablet" id="tabletMenu">
+            <div class="itemMenu">
+                HOME
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What about ISAMA
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What we do?
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Our Projects
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Excellent Team
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Contact
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("burger").onclick = displayMenu;
+            function displayMenu(){
+                let elem = document.getElementById("tabletMenu");
+                if(elem.style.display==="flex"){
+                    elem.style.display="none";
+                } else{
+                    elem.style.display="flex";
+                }
+            }
+        </script>
+        <div class="logotype">
+            <object type="image/svg+xml" data="img/logo.svg"></object>
+        </div>
+        <div class="contactBlock">
+            <div class="contact">
+                <svg class="icon-contact" width="28px" height="29px">
+                    <path
+                        d="M3.413,0.606 L0.831,3.206 C-0.595,4.642 0.091,6.356 0.831,8.406 C0.831,8.406 4.381,14.498 8.970,19.120 C13.848,24.034 19.547,27.256 19.547,27.256 C21.430,28.231 23.284,28.692 24.710,27.256 L27.292,24.656 C28.004,23.938 28.157,22.659 27.292,22.056 L22.128,18.156 C21.254,17.560 20.260,17.438 19.547,18.156 L19.547,18.156 L19.547,18.156 L18.020,19.694 C16.229,18.348 14.238,16.709 12.448,14.906 C10.865,13.311 9.458,11.582 8.286,9.997 L9.866,8.406 C10.579,7.688 10.458,6.686 9.866,5.806 L5.994,0.606 C5.281,-0.112 4.125,-0.112 3.413,0.606 M5.915,9.785 L7.989,7.697 C8.443,7.240 8.365,6.603 7.989,6.042 L5.525,2.733 C5.071,2.122 4.336,2.276 3.882,2.733 L2.239,4.388 C1.595,4.998 1.781,6.421 2.122,7.106 C3.646,10.031 7.032,14.536 9.866,17.506 C13.134,21.076 20.838,25.956 20.838,25.956 C21.432,26.271 23.083,26.295 23.537,25.838 L25.179,24.183 C25.519,23.611 25.671,22.947 25.179,22.529 L21.894,20.047 C21.337,19.668 20.705,19.590 20.251,20.047 L18.227,22.085 C17.750,21.747 10.146,16.714 5.915,9.785 Z" />
+                </svg>
+                <svg class="divide" width="1px" height="24px">
+                    <path d="M0.000,0.000 L1.000,0.000 L1.000,24.000 L0.000,24.000 L0.000,0.000 Z" />
+                </svg>
+                <svg class="icon-contact" id="location" width="26px" height="34px">
+                    <path
+                        d="M13.460,33.995 C11.386,34.006 0.983,18.078 0.983,12.748 C0.983,5.708 6.569,0.000 13.460,0.000 C20.351,0.000 25.938,5.708 25.938,12.748 C25.938,18.007 15.502,34.006 13.460,33.995 ZM13.460,2.125 C7.718,2.125 3.063,6.881 3.063,12.748 C3.063,17.190 11.732,30.817 13.460,30.808 C15.162,30.817 23.858,17.130 23.858,12.748 C23.858,6.881 19.203,2.125 13.460,2.125 ZM13.460,18.060 C10.589,18.060 8.261,15.682 8.261,12.748 C8.261,9.815 10.589,7.437 13.460,7.437 C16.332,7.437 18.659,9.815 18.659,12.748 C18.659,15.682 16.332,18.060 13.460,18.060 ZM13.460,9.561 C11.738,9.561 10.341,10.988 10.341,12.748 C10.341,14.508 11.738,15.935 13.460,15.935 C15.183,15.935 16.580,14.508 16.580,12.748 C16.580,10.988 15.183,9.561 13.460,9.561 Z" />
+                </svg>
+                <svg class="divide" width="1px" height="24px">
+                    <path d="M0.000,0.000 L1.000,0.000 L1.000,24.000 L0.000,24.000 L0.000,0.000 Z" />
+                </svg>
+                <svg class="icon-contact" width="30px" height="25px">
+                    <path
+                        d="M26.330,24.271 L4.311,24.271 C2.285,24.271 0.642,22.642 0.642,20.633 L0.642,4.261 C0.642,2.251 2.285,0.623 4.311,0.623 L26.330,0.623 C28.357,0.623 30.000,2.251 30.000,4.261 L30.000,20.633 C30.000,22.642 28.357,24.271 26.330,24.271 ZM5.229,2.442 L15.321,11.139 L25.413,2.442 L5.229,2.442 ZM28.165,4.261 C28.165,3.738 27.939,3.269 27.582,2.937 L15.321,13.356 L3.060,2.937 C2.703,3.269 2.477,3.738 2.477,4.261 L2.477,20.633 C2.477,21.638 3.298,22.452 4.311,22.452 L26.330,22.452 C27.344,22.452 28.165,21.638 28.165,20.633 L28.165,4.261 Z" />
+                </svg>
+            </div>
+            <div class="hint">
+                <div class="hintContent">
+                    <p>Saudi Arabia . Alreyadah</p>
+                </div>
+                <div class="triangleHint">
+                </div>    
+            </div>
+        </div>
+        <div class="search">
+            <svg width="25px" height="25px">
+                <path fill-rule="evenodd" fill="rgb(109, 110, 113)"
+                    d="M25.000,23.334 C25.000,24.254 24.254,25.000 23.333,25.000 C22.851,25.000 22.425,24.789 22.121,24.462 L22.113,24.470 L18.733,21.090 C19.489,20.130 19.958,18.940 19.987,17.630 L24.470,22.113 L24.462,22.121 C24.789,22.426 25.000,22.852 25.000,23.334 ZM10.833,21.667 C4.850,21.667 0.000,16.816 0.000,10.833 C0.000,4.850 4.850,0.000 10.833,0.000 C16.816,0.000 21.667,4.850 21.667,10.833 C21.667,16.816 16.816,21.667 10.833,21.667 ZM10.833,3.334 C6.691,3.334 3.333,6.691 3.333,10.833 C3.333,14.975 6.691,18.334 10.833,18.334 C14.975,18.334 18.333,14.975 18.333,10.833 C18.333,6.691 14.975,3.334 10.833,3.334 Z" />
+            </svg>
+            <input type="text" placeholder="Type your search words">
+        </div>
+    </header>
+    <hr />
+    <nav>
+        <div class="menu">
+            <div class="itemMenu">
+                HOME
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What about ISAMA
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                What we do?
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Our Projects
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Excellent Team
+                <div class="triangle"></div>
+            </div>
+            <div class="itemMenu">
+                Contact
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="search">
+            <svg width="25px" height="25px">
+                <path fill-rule="evenodd" fill="rgb(109, 110, 113)"
+                    d="M25.000,23.334 C25.000,24.254 24.254,25.000 23.333,25.000 C22.851,25.000 22.425,24.789 22.121,24.462 L22.113,24.470 L18.733,21.090 C19.489,20.130 19.958,18.940 19.987,17.630 L24.470,22.113 L24.462,22.121 C24.789,22.426 25.000,22.852 25.000,23.334 ZM10.833,21.667 C4.850,21.667 0.000,16.816 0.000,10.833 C0.000,4.850 4.850,0.000 10.833,0.000 C16.816,0.000 21.667,4.850 21.667,10.833 C21.667,16.816 16.816,21.667 10.833,21.667 ZM10.833,3.334 C6.691,3.334 3.333,6.691 3.333,10.833 C3.333,14.975 6.691,18.334 10.833,18.334 C14.975,18.334 18.333,14.975 18.333,10.833 C18.333,6.691 14.975,3.334 10.833,3.334 Z" />
+            </svg>
+            <input type="text" placeholder="Type your search words">
+        </div>
+    </nav>
+    <main>
+        <article class="main">
+            <section>
+                <h1>let's draw some arts</h1>
+                <div class="secondTitle">
+                    <h2>make your business much better</h2>
+                    <p>&</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="slider">
+                    <div class="greenBox">
+                        <div class="panel">
+                            <svg width="32px" height="29px">
+                                <path fill-rule="evenodd" fill="rgb(173, 255, 99)"
+                                    d="M29.196,16.505 C29.075,16.625 18.143,27.430 18.143,27.430 C16.960,28.599 15.048,28.599 13.865,27.430 C13.865,27.430 3.881,17.562 2.812,16.505 C-0.929,12.805 -0.929,6.810 2.812,3.112 C6.443,-0.478 12.244,-0.553 16.004,2.824 C19.764,-0.553 25.566,-0.478 29.196,3.112 C32.937,6.810 32.937,12.805 29.196,16.505 ZM27.769,4.521 C24.926,1.710 20.353,1.611 17.360,4.299 L16.004,5.517 L14.648,4.299 C11.655,1.611 7.083,1.710 4.239,4.521 C1.289,7.436 1.289,12.180 4.239,15.095 L15.291,26.020 C15.683,26.409 16.324,26.409 16.716,26.020 L27.769,15.095 C30.719,12.180 30.719,7.436 27.769,4.521 ZM9.255,6.343 L9.254,6.343 C7.461,6.343 6.005,7.796 6.005,9.587 L6.005,9.588 C6.005,9.864 5.782,10.087 5.505,10.087 C5.229,10.087 5.005,9.864 5.005,9.588 C5.005,7.246 6.907,5.347 9.251,5.346 C9.253,5.346 9.253,5.345 9.255,5.345 C9.532,5.345 9.755,5.568 9.755,5.844 C9.755,6.120 9.532,6.343 9.255,6.343 Z" />
+                            </svg>
+                            <p>Like</p>
+                        </div>
+                    </div>
+                    <div class="yellowBox">
+                        <div class="panel">
+                            <svg width="32px" height="29px">
+                                <path fill-rule="evenodd" fill="rgb(204, 152, 0)"
+                                    d="M29.196,16.505 C29.074,16.625 18.143,27.430 18.143,27.430 C16.961,28.599 15.048,28.599 13.865,27.430 C13.865,27.430 3.881,17.562 2.812,16.505 C-0.929,12.805 -0.929,6.810 2.812,3.112 C6.443,-0.478 12.244,-0.553 16.004,2.824 C19.764,-0.553 25.566,-0.478 29.196,3.112 C32.937,6.810 32.937,12.805 29.196,16.505 ZM27.769,4.521 C24.926,1.710 20.353,1.611 17.360,4.299 L16.004,5.517 L14.648,4.299 C11.655,1.611 7.083,1.710 4.239,4.521 C1.289,7.436 1.289,12.180 4.239,15.095 L15.291,26.020 C15.683,26.409 16.324,26.409 16.716,26.020 L27.769,15.095 C30.719,12.180 30.719,7.436 27.769,4.521 ZM9.255,6.343 L9.254,6.343 C7.461,6.343 6.005,7.796 6.005,9.587 L6.005,9.588 C6.005,9.864 5.782,10.087 5.505,10.087 C5.229,10.087 5.005,9.864 5.005,9.588 C5.005,7.246 6.907,5.347 9.251,5.346 C9.254,5.346 9.254,5.345 9.255,5.345 C9.532,5.345 9.755,5.568 9.755,5.844 C9.755,6.120 9.532,6.343 9.255,6.343 Z" />
+                            </svg>
+                            <p>Like</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <svg width="23px" height="40px">
+                            <path fill-rule="evenodd" fill="rgb(212, 212, 212)"
+                                d="M1.002,5.024 L16.066,19.994 L0.805,35.159 L0.806,35.160 C0.307,35.674 0.000,36.373 0.000,37.143 C0.000,38.721 1.287,40.000 2.875,40.000 C3.650,40.000 4.353,39.695 4.870,39.199 L4.871,39.200 L22.121,22.057 L22.120,22.056 C22.662,21.537 23.000,20.808 23.000,20.000 C23.000,19.998 23.000,19.996 23.000,19.994 C23.000,19.992 23.000,19.990 23.000,19.988 C23.000,19.180 22.662,18.451 22.120,17.931 L22.121,17.931 L4.871,0.787 L4.864,0.795 C4.347,0.303 3.647,0.000 2.875,0.000 C1.287,0.000 0.000,1.279 0.000,2.857 C0.000,3.724 0.389,4.500 1.002,5.024 Z" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <div class="about">
+                    <img src="img/light.png" alt="light">
+                    <div>
+
+                        <h3>What about ISAMA</h3>
+                        <p>
+                            ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads
+                            to a modern concept of professionalism. At ISAMA we believe even if you are good at what you
+                            do, you have a great product or you provide an excellent service. We still can present you a
+                            little better to the world, creating your full identity, provides you with your marketing
+                            plans, design your website, print your publications, design your logo’s and offices. Simply
+                            we give your business the perfect image.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="exist">
+                    <img src="img/tree.png" alt="tree">
+                    <div>
+
+                        <h3>Why we exist</h3>
+                    <p>
+                        Reaching customer satisfaction through providing them with cutting-edge technologies that give
+                        clients access to a wide range of tools, ensuring efficient and results-oriented communication
+                        solutions, which grant them a special character that distinguishes them from the others in the
+                        business.
+                    </p>
+                    </div>
+                    
+                </div>
+            </section>
+        </article>
+
+    </main>
+</body>
+
+</html>
