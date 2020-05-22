@@ -31,15 +31,13 @@ header>h1{
     font: unset;
     border: 1px solid black;
 }
-.buttonCreate>p{
+.buttonCreate>span{
     margin: 5px 0;
 }
 #account{
     background: transparent;
     border: 0px;
     outline: transparent; 
-}
-#profile{
     display: flex;
     align-items: center;
     margin-right: 15px;
