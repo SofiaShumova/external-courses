@@ -1,3 +1,4 @@
+import Issue from './issue.js'
 let dataMock = [
     {
         title: 'backlog',
@@ -17,13 +18,8 @@ let dataMock = [
     }
 ]
 
-recoveryData();
-class Issue {
-    constructor(id, name) {
-        this.id = "task" + id;
-        this.name = name;
-    }
-}
+let buttonsAdd = document.getElementsByClassName("footerTab")
+let contents = document.getElementsByClassName("content")
 
 function addNewIssue(name) {
     dataMock[0].issues.push(new Issue(dataMock[0].issues.length+1, name))
@@ -56,36 +52,31 @@ function removeIssue(index, name){
     document.getElementById(dataMock[index].title).getElementsByClassName("content")[0].getElementsByClassName("task")[removeIndex].remove()
 }
 
-let buttonsAdd = document.getElementsByClassName("footerTab")
-let contents = document.getElementsByClassName("content")
-
-for(let button of buttonsAdd){
-    button.addEventListener("click", actionAdd);
-}
-
 function actionAdd() {
     if(document.getElementById("newTaskInput"))
         return;
+
     setButtonDisabled(true);
     let title = this.parentElement.id;
     let index = getIndex(title);
 
     let taskBlock = document.createElement("div");
     taskBlock.setAttribute("class", "task");
-    
+
     let inputText = document.createElement("input");    
     inputText.setAttribute("type", "text");
     inputText.setAttribute("id", "newTaskInput");
 
     taskBlock.appendChild(inputText);
-    
+
     if(index>0){
+        
         let datalist = getDataList(index-1);
         datalist.setAttribute("id", "list");
         inputText.appendChild(datalist);
         inputText.setAttribute("list", "list")
     }
-    
+
     inputText.addEventListener("blur", handlerInput)
     inputText.addEventListener("keypress", function (event) {
         if (event.keyCode == 13) {
@@ -98,7 +89,7 @@ function actionAdd() {
 
 function getDataList(index){
     let datalist = document.createElement("datalist");
-
+    console.log(index);
     for(let issue of dataMock[index].issues){
         let option = document.createElement("option")
         option.setAttribute("value", issue.name)
@@ -112,6 +103,7 @@ function handlerInput() {
     let title = this.parentElement.parentElement.parentElement.id
     if(this.value === ""){
         this.parentElement.remove()
+        setButtonDisabled(false);
         return
     } else if( getIndex(title)>0){
         if(getIssue(getIndex(title)-1, this.value) == undefined){
@@ -125,14 +117,12 @@ function handlerInput() {
     } else{
         addIssue(title, this.value);
     }
-    
+
     let p = document.createElement("p");
     p.innerHTML = this.value;
     setButtonDisabled(false);
     this.replaceWith(p);
-
     updateLocalStorage();
-   
 }
 
 function setButtonDisabled(state){
@@ -158,14 +148,12 @@ function loadView(){
             dataMock[key].issues.forEach((element)=>{
                 addTaskInView(dataMock[key].title, element.name)
             })
-            
         }
        }
-   
+
 }
 
 function addTaskInView(title, task){
-    let index = getIndex(title);
     let taskBlock = document.createElement("div");
     taskBlock.setAttribute("class", "task");
 
@@ -175,7 +163,9 @@ function addTaskInView(title, task){
     document.getElementById(title).children[1].appendChild(taskBlock);    
 }
 
-
-
-
-
+export function actionsWithTasks(){
+    recoveryData();
+    for(let button of buttonsAdd){
+        button.addEventListener("click", actionAdd);
+    }
+}

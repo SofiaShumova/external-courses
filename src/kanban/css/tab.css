@@ -1,0 +1,69 @@
+.tabTask{
+    background: #EBECF0;
+    width: 282px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    max-height: 90%;
+}
+.headerTab, .footerTab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: normal;
+}
+.footerTab{
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    color: #5E6C84; 
+    margin-left: 4px;
+}
+.headerTab>h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.footerTab>span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+button.footerTab{
+    background: transparent;
+    border: 0px;
+}
+.content{
+    overflow: auto;
+}
+.plusCard{
+    margin-right: 4px;
+}
+#newTaskInput{
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    border: 0px;
+}
+.task{
+    background: white;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 7px 9px;
+}
+.task>p{
+    margin: 0 2px;
+}
+.tasks{
+    display: flex;
+    flex: 2;
+    margin-left: 67px;
+}

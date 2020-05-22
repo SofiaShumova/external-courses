@@ -1,0 +1,21 @@
+.buttonCreate{
+    display: flex;
+    align-items: center;
+    background: white;
+    color: black;
+    width: 16%;
+    height: 33px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-right: 49px;
+    padding: 0px;
+    font-size: medium;
+    font: unset;
+    border: 1px solid black;
+}
+.buttonCreate>span{
+    margin: 5px 0;
+}
+.plus{
+    margin-right: 10px;
+}

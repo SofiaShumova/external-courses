@@ -1,0 +1,17 @@
+@import url('tab.css');
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+main{
+    background: #0079BF;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 110px) ; 
+    width: 100vw;
+    overflow-x: auto;
+    align-items: flex-start;
+}
+.infoDevelop, .stateTask{
+    margin-right: 36px;
+}

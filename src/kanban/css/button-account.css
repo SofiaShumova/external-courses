@@ -1,0 +1,14 @@
+#account{
+    background: transparent;
+    border: 0px;
+    outline: transparent; 
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.icon{
+    margin-right: 7px;
+}
+object{
+    pointer-events: none;
+}
