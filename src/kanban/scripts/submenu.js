@@ -1,6 +1,8 @@
+import {createMenu} from './createMenu.js'
 let account = document.getElementById("account");
 let pic = document.getElementById("profile-pic")
-let menu = createMenu();
+let items = ["Account", "Tasks", "Edit", "Settings", "Log out"];
+let menu = createMenu(items);
 let arrow = document.getElementById("arrow")
 
 function displayAccountMenu(){
@@ -12,21 +14,6 @@ function displayAccountMenu(){
         arrow.style.transform = "rotate(360deg)"
     }
 }
-
-function createMenu(){
-    let items = ["Account", "Tasks", "Edit", "Settings", "Log out"];
-    let list = document.createElement("ul");
-    list.style.display="none";
-
-    for(let item of items){
-        let liItem = document.createElement("li");
-        liItem.innerHTML=item;
-        liItem.setAttribute("class", "itemMenu")
-        list.appendChild(liItem);
-    }
-
-    return list;
-} 
 
 export function addActionMenu(){
     menu.setAttribute("id", "accountMenu")

@@ -1,0 +1,55 @@
+#modalWindow{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0,0,0,0.7);
+    pointer-events: none;
+}
+#modalWindow:target {
+    display: flex;
+    pointer-events: auto;
+} 
+#modalBody{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #0079BF;
+    color: white;
+}
+.modalFull {
+    position: absolute;
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #titleList{
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #5E6C84;
+    padding: 10px 20px;
+  }
+  #create{
+    font-size: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #0067A3;
+    border: 0px solid black;
+    color: white;
+    padding: 10px 0;
+    background: #EBECF0;
+    color: #5E6C84;
+}
+#modalHeader{
+    margin-top: 0;
+}

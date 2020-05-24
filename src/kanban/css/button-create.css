@@ -1,4 +1,4 @@
-.buttonCreate{
+#buttonCreate{
     display: flex;
     align-items: center;
     background: white;
@@ -13,7 +13,7 @@
     font: unset;
     border: 1px solid black;
 }
-.buttonCreate>span{
+#buttonCreate>span{
     margin: 5px 0;
 }
 .plus{
