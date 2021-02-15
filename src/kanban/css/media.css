@@ -1,0 +1,20 @@
+@media(max-width: 800px){
+    h1{
+        font-size: 3vw;
+    }
+    .buttonCreate>p{
+        display: none;
+    }
+    .plus{
+        margin-right: 0px;
+    }
+    .buttonCreate{
+        width: 10%;
+    }
+} 
+
+@media(max-width:1200px){
+    .buttonCreate>p{
+        font-size: 1.5vw;
+    }
+}

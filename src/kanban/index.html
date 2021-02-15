@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanban</title>
+</head>
+
+<body>
+    <header>
+        <object class="menu" type="image/svg+xml" data="img/menu.svg">
+        Your browser does not support SVG
+        </object>
+        <h1>Awesome Kanban Board</h1>
+        <button id="buttonCreate" onclick="window.location.href='#modalWindow'">
+            <svg class="plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11 0C4.9 0 0 4.9 0 11C0 17.1 4.9 22 11 22C17.1 22 22 17.1 22 11C22 4.9 17.1 0 11 0ZM16 13H13V16C13 17.1 12.1 18 11 18C9.9 18 9 17.1 9 16V13H6C4.9 13 4 12.1 4 11C4 9.9 4.9 9 6 9H9V6C9 4.9 9.9 4 11 4C12.1 4 13 4.9 13 6V9H16C17.1 9 18 9.9 18 11C18 12.1 17.1 13 16 13Z"
+                    fill="black" />
+            </svg>
+            <span>Create new list</span>
+        </button>
+        <div id="modalWindow">
+            <div id = "modalBody">
+                <h2 id="modalHeader">Create new list</h2>
+                <label for="titleList">Enter the title</label>
+                <input id="titleList" type="text">
+                <button id="create">
+                    <span>Create</span>
+                </button>
+            </div>
+            <a href="#" class="modalFull"></a>
+        </div>
+        <button id="account">
+                <object class="icon" id = "profile-pic" type="image/svg+xml" data="img/icon-profile.svg">
+                    Your browser does not support SVG
+                </object>
+                <svg id = "arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.415 0.209991L6 4.79499L10.585 0.209991L12 1.62499L6 7.62499L0 1.62499L1.415 0.209991Z"
+                        fill="white" />
+                </svg>
+        </button>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <div class="tasks">
+            <span class="stateTask">Active tasks:</span>
+            <span class="stateTask">Finished tasks:</span>
+        </div>
+        <p class="infoDevelop">Kanban board by Sofia, 2020</p>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
